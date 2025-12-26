@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas Seguras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Senhas Seguras</h1>
+
+        <div class="result-container">
+            <span id="result"></span>
+            <button class="btn" id="copy">
+                Copiar
+            </button>
+        </div>
+        
+        <div class="strength-meter" id="strength-meter">
+            <div class="strength-bar" id="strength-bar"></div>
+            <span class="strength-text" id="strength-text"></span>
+        </div>
+
+        <div class="settings">
+            <div class="setting">
+                <label for="length">Comprimento da Senha</label>
+                <input type="number" id="length" min="8" max="32" value="16">
+            </div>
+            <div class="setting">
+                <label for="uppercase">Incluir Letras Maiúsculas</label>
+                <input type="checkbox" id="uppercase" checked>
+            </div>
+            <div class="setting">
+                <label for="lowercase">Incluir Letras Minúsculas</label>
+                <input type="checkbox" id="lowercase" checked>
+            </div>
+            <div class="setting">
+                <label for="numbers">Incluir Números</label>
+                <input type="checkbox" id="numbers" checked>
+            </div>
+            <div class="setting">
+                <label for="symbols">Incluir Símbolos</label>
+                <input type="checkbox" id="symbols" checked>
+            </div>
+        </div>
+
+        <button class="btn btn-large" id="generate">
+            Gerar Senha
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
